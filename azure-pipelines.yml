@@ -8,8 +8,12 @@ trigger:
 
 
 pool:
-  name: 'testpool'   # Replace with your self-hosted agent pool name
-  vmImage: 'windows-latest'
+  name: 'testpool'
+  demands:
+    - msbuild
+    - vstest
+    - Agent.Version -gtVersion 2.163.1
+
 
   
 
