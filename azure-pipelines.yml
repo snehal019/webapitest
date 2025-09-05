@@ -11,7 +11,7 @@ pool:
   name: 'testpool'
   demands:
     - msbuild
-    - Agent.Version -gtVersion 2.163.1
+    - vstest
 
  
 variables:
