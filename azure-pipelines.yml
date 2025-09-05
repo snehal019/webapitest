@@ -10,7 +10,7 @@ trigger:
 pool:
   name: 'testpool'
   demands:
-    - msbuild
+    - msbuild   
     - vstest
 
  
